@@ -338,6 +338,11 @@ body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
 .grid-2{ grid-template-columns: 1fr; }
 
 /* ===== RESPONSIVIDADE ===== */
+@media (min-width: 768px){
+  .grid-3{ grid-template-columns: repeat(3, 1fr); }
+  .grid-2{ grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 1024px) {
   .navbar {
     padding: 0 2rem;
@@ -385,8 +390,6 @@ body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
     width: 100%;
     border-radius: 0;
   }
-  .grid-3{ grid-template-columns: repeat(3, 1fr); }
-  .grid-2{ grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px) {
